@@ -3,6 +3,7 @@ import React from 'react';
 import {View} from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
+import WelcomeBody from './components/WelcomeBody';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           backgroundColor: '#495E57',
         }}>
         <LittleLemonHeader />
+        <WelcomeBody />
       </View>
       <View style={{backgroundColor: '#495E57'}}>
         <LittleLemonFooter />
