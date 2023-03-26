@@ -4,15 +4,14 @@ import {SafeAreaView, Text, View, StyleSheet} from 'react-native';
 export default function LittleLemonHeader() {
   const styles = StyleSheet.create({
     boxStyle: {
-      backgroundColor: '#F4CE14',
+      backgroundColor: '#EE9972',
       marginBottom: 10,
     },
     textStyle: {
-      fontSize: 25,
-      color: '#000000',
+      padding: 40,
+      fontSize: 30,
+      color: 'black',
       textAlign: 'center',
-      padding: 10,
-      fontWeight: 'bold',
     },
   });
 

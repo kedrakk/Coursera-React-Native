@@ -4,10 +4,15 @@ import {StyleSheet, Text, View} from 'react-native';
 export default function LittleLemonFooter() {
   const styles = StyleSheet.create({
     boxStyle: {
-      backgroundColor: '#F4CE14',
-      marginBottom: 10,
+      backgroundColor: '#EE9972',
+      marginBottom: 20,
     },
-    textStyle: {fontSize: 18, color: 'black', textAlign: 'center'},
+    textStyle: {
+      fontSize: 18,
+      color: 'black',
+      textAlign: 'center',
+      fontStyle: 'italics',
+    },
   });
 
   return (

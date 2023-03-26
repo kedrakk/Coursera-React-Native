@@ -7,11 +7,11 @@ import WelcomeBody from './components/WelcomeBody';
 function App() {
   const styles = StyleSheet.create({
     boxStyle: {
-      backgroundColor: '#F4CE14',
-      marginBottom: 10,
+      flex: 1,
+      backgroundColor: '#333333',
     },
     innerBoxStyle: {
-      backgroundColor: '#495E57',
+      backgroundColor: '#333333',
     },
   });
   return (
