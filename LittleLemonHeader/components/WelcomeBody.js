@@ -1,10 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
-import {View, Text} from 'react-native';
+import {Text, ScrollView} from 'react-native';
 import React from 'react';
 
 export default function WelcomeBody() {
   return (
-    <View style={{flex: 1}}>
+    <ScrollView indicatorStyle={'white'} style={{flex: 1}}>
       <Text
         style={{
           padding: 40,
@@ -24,8 +24,14 @@ export default function WelcomeBody() {
         }}>
         Little Lemon is a charming neighborhood bistro that serves simple food
         and classic cocktails in a lively but casual environment. We would love
-        to hear your experience with us!
+        to hear more about your experience with us! \n Little Lemon is a
+        charming neighborhood bistro that serves simple food and classic
+        cocktails in a lively but casual environment. We would love to hear more
+        about your experience with us! \nLittle Lemon is a charming neighborhood
+        bistro that serves simple food and classic cocktails in a lively but
+        casual environment. We would love to hear more about your experience
+        with us!
       </Text>
-    </View>
+    </ScrollView>
   );
 }
