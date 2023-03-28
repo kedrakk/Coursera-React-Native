@@ -2,7 +2,8 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
-import WelcomeBody from './components/WelcomeBody';
+import FlatListItems from './components/FlatListItems';
+// import WelcomeBody from './components/WelcomeBody';
 
 function App() {
   const styles = StyleSheet.create({
@@ -18,7 +19,8 @@ function App() {
     <>
       <View style={styles.boxStyle}>
         <LittleLemonHeader />
-        <WelcomeBody />
+        {/* <WelcomeBody /> */}
+        <FlatListItems />
       </View>
       <View style={styles.innerBoxStyle}>
         <LittleLemonFooter />

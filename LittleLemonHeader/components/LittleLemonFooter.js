@@ -11,7 +11,7 @@ export default function LittleLemonFooter() {
       fontSize: 18,
       color: 'black',
       textAlign: 'center',
-      fontStyle: 'italics',
+      // fontStyle: 'italics',
     },
   });
 
