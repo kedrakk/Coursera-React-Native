@@ -2,7 +2,8 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
-import FlatListItems from './components/FlatListItems';
+import SectionListItems from './components/SectionListItems';
+//import FlatListItems from './components/FlatListItems';
 // import WelcomeBody from './components/WelcomeBody';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <View style={styles.boxStyle}>
         <LittleLemonHeader />
         {/* <WelcomeBody /> */}
-        <FlatListItems />
+        <SectionListItems />
       </View>
       <View style={styles.innerBoxStyle}>
         <LittleLemonFooter />

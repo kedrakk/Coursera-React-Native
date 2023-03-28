@@ -5,11 +5,10 @@ export default function LittleLemonHeader() {
   const styles = StyleSheet.create({
     boxStyle: {
       backgroundColor: '#EE9972',
-      marginBottom: 10,
     },
     textStyle: {
-      padding: 40,
-      fontSize: 30,
+      paddingVertical: 10,
+      fontSize: 25,
       color: 'black',
       textAlign: 'center',
     },
