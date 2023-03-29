@@ -2,7 +2,8 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
-import SectionListItems from './components/SectionListItems';
+import TextInputBody from './components/TextInputBody';
+// import SectionListItems from './components/SectionListItems';
 //import FlatListItems from './components/FlatListItems';
 // import WelcomeBody from './components/WelcomeBody';
 
@@ -21,7 +22,7 @@ function App() {
       <View style={styles.boxStyle}>
         <LittleLemonHeader />
         {/* <WelcomeBody /> */}
-        <SectionListItems />
+        <TextInputBody />
       </View>
       <View style={styles.innerBoxStyle}>
         <LittleLemonFooter />
