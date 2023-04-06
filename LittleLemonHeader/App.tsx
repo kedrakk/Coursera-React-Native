@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
 import LittleLemonFooter from './components/LittleLemonFooter';
-import LittleLemonImage from './components/LittlelemonImage';
+import ThemeChangeSample from './components/ThemeChangeSample';
 
 function App() {
   const styles = StyleSheet.create({
@@ -18,7 +18,7 @@ function App() {
     <>
       <View style={styles.boxStyle}>
         <LittleLemonHeader />
-        <LittleLemonImage />
+        <ThemeChangeSample />
       </View>
       <View style={styles.innerBoxStyle}>
         <LittleLemonFooter />
