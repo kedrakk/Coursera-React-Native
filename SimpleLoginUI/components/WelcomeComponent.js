@@ -1,5 +1,6 @@
 import {
   Image,
+  Pressable,
   ScrollView,
   StyleSheet,
   Text,
@@ -8,7 +9,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
-export default function ThemeChangeSample() {
+export default function ThemeChangeSample({navigation}) {
   const colorScheme = useColorScheme();
   return (
     <ScrollView
@@ -53,6 +54,9 @@ export default function ThemeChangeSample() {
         casual environment. We would love to hear more about your experience
         with us!
       </Text>
+      <Pressable onPress={() => navigation.goBack()}>
+        <Text style={styles.buttonStyle}>Go Back</Text>
+      </Pressable>
     </ScrollView>
   );
 }
@@ -93,5 +97,15 @@ const styles = StyleSheet.create({
   },
   textColorDark: {
     color: '#fff',
+  },
+  buttonStyle: {
+    height: 45,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    fontSize: 16,
+    backgroundColor: '#004944',
+    color: '#fff',
+    textAlign: 'center',
   },
 });
