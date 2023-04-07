@@ -21,7 +21,7 @@ function App(): JSX.Element {
       <NavigationContainer>
         <View style={styles.container}>
           <LittleLemonHeader />
-          <Stack.Navigator initialRouteName="Welcome">
+          <Stack.Navigator initialRouteName="Login">
             <Stack.Screen name="Login" component={LoginComponents} />
             <Stack.Screen name="Welcome" component={ThemeChangeSample} />
           </Stack.Navigator>

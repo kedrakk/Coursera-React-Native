@@ -1,7 +1,7 @@
 import React from 'react';
-import {ScrollView, Text, StyleSheet, TextInput} from 'react-native';
+import {ScrollView, Text, StyleSheet, TextInput, Pressable} from 'react-native';
 
-export default function LoginComponents() {
+export default function LoginComponents({navigation}) {
   const [email, onEmailChanged] = React.useState('');
   const [password, onPasswordChanged] = React.useState('');
   return (
@@ -23,6 +23,9 @@ export default function LoginComponents() {
         secureTextEntry={true}
         keyboardType={'default'}
       />
+      <Pressable onPress={() => navigation.navigate('Welcome')}>
+        <Text style={styles.buttonStyle}>Login</Text>
+      </Pressable>
     </ScrollView>
   );
 }
@@ -51,5 +54,15 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 16,
     backgroundColor: '#EDEFEE',
+  },
+  buttonStyle: {
+    height: 45,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    fontSize: 16,
+    backgroundColor: '#004944',
+    color: '#fff',
+    textAlign: 'center',
   },
 });
